@@ -6,4 +6,4 @@ services:
        args:
          IMAGE_ARCH: arm64v8
          QEMU_FILE: qemu-aarch64-static
-         RUN_CMD: chmod +x /input/main.sh && /input/main.sh arm64
+         RUN_CMD: /input/main.sh arm64
