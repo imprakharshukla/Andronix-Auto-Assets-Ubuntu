@@ -2,8 +2,8 @@ version: '3.2'
 
 services:
    imagebuild:
-     build: 
+     build:
        args:
          IMAGE_ARCH: i386
          QEMU_FILE: qemu-i386-static
-         RUN_CMD: /input/main.sh x86
+         RUN_CMD: chmod +x /input/main.sh && /input/main.sh x86

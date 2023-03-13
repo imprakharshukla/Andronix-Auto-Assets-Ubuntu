@@ -2,8 +2,8 @@ version: '3.2'
 
 services:
    imagebuild:
-     build: 
+     build:
        args:
          IMAGE_ARCH: arm32v7
          QEMU_FILE: qemu-arm-static
-         RUN_CMD: /input/main.sh arm
+         RUN_CMD: chmod +x /input/main.sh && /input/main.sh arm
